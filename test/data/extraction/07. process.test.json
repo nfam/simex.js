@@ -1,0 +1,184 @@
+[{
+    "input": "1.1",
+    "expression": {
+        "root": {
+            "process": "int"
+        }
+    },
+    "output": "1",
+    "processors": ["int"]
+}, {
+    "input": "th",
+    "expression": {
+        "root": {
+            "process": "int"
+        }
+    },
+    "processors": ["int"],
+    "error": "inputUnmatched",
+    "at": "root.process"
+}, {
+    "input": "1.1",
+    "expression": {
+        "root": {
+            "process": "float"
+        }
+    },
+    "output": "1.1",
+    "processors": ["float"]
+}, {
+    "input": "th",
+    "expression": {
+        "root": {
+            "process": "float"
+        }
+    },
+    "processors": ["float"],
+    "error": "inputUnmatched",
+    "at": "root.process"
+}, {
+    "input": "th",
+    "expression": {
+        "root": {
+            "slice": {
+                "process": "float"
+            }
+        }
+    },
+    "processors": ["float"],
+    "error": "inputUnmatched",
+    "at": "root.slice.process"
+}, {
+    "input": "0123",
+    "expression": {
+        "root": {
+            "slice": {
+                "process": {
+                    "by": "append"
+                }
+            }
+        }
+    },
+    "output": "0123"
+}, {
+    "input": "0123",
+    "expression": {
+        "root": {
+            "slice": {
+                "process": {
+                    "by": "prepend"
+                }
+            }
+        }
+    },
+    "output": "0123"
+}, {
+    "input": "0123",
+    "expression": {
+        "root": {
+            "slice": {
+                "process": {
+                    "by": "replace"
+                }
+            }
+        }
+    },
+    "output": "0123"
+}, {
+    "input": "0123",
+    "expression": {
+        "root": {
+            "slice": {
+                "process": {
+                    "by": "replaceTo"
+                }
+            }
+        }
+    },
+    "output": "0123"
+}, {
+    "input": "0123",
+    "expression": {
+        "root": {
+            "slice": {
+                "process": {
+                    "by": "append",
+                    "with": "0"
+                }
+            }
+        }
+    },
+    "output": "01230"
+}, {
+    "input": "0123",
+    "expression": {
+        "root": {
+            "slice": {
+                "process": {
+                    "by": "prepend",
+                    "with": "-"
+                }
+            }
+        }
+    },
+    "output": "-0123"
+}, {
+    "input": "0123",
+    "expression": {
+        "root": {
+            "slice": {
+                "process": {
+                    "by": "replace",
+                    "with": ["1", "-"]
+                }
+            }
+        }
+    },
+    "output": "0-23"
+}, {
+    "input": "value",
+    "expression": {
+        "root": {
+            "slice": {
+                "process": {
+                    "by": "replaceTo",
+                    "with": ["text-{x}-0", "{x}"]
+                }
+            }
+        }
+    },
+    "output": "text-value-0"
+}, {
+    "input": "0123",
+    "expression": {
+        "root": {
+            "slice": {
+                "process": [{
+                    "by": "append",
+                    "with": "0"
+                }, {
+                    "by": "prepend",
+                    "with": "-"
+                }]
+            }
+        }
+    },
+    "output": "-01230"
+}, {
+    "input": "12",
+    "expression": {
+        "root": {
+            "slice": {
+                "process": [{
+                        "by": "prepend",
+                        "with": "*"
+                    },
+                    "int"
+                ]
+            }
+        }
+    },
+    "processors": ["int"],
+    "error": "inputUnmatched",
+    "at": "root.slice.process[1]"
+}]

@@ -1,0 +1,56 @@
+[{
+    "input": "&apos;",
+    "expression": {
+        "root": {
+            "process": {
+                "by": "unescape",
+                "with": "xml"
+            }
+        }
+    },
+    "output": "'"
+}, {
+    "input": "&apos;&lt;&gt;&quot;&amp;&copy;&#8710;&#xAE;",
+    "expression": {
+        "root": {
+            "process": {
+                "by": "unescape",
+                "with": "xml"
+            }
+        }
+    },
+    "output": "'<>\"&&copy;∆®"
+}, {
+    "input": "\\0\\b\\f\\n\\r\\t\\v\\'\\\\\\\" \\123\\040\\54\\4 \\xAC \\u00A9 \\u{A9} \\u{2F804}",
+    "expression": {
+        "root": {
+            "process": {
+                "by": "unescape",
+                "with": "js"
+            }
+        }
+    },
+    "output": "\u0000\b\f\n\r\t\u000B'\\\" S ,\u0004 \u00AC \u00A9 \u00A9 \\u{2F804}"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "unescape",
+                "with": "xml"
+            }
+        }
+    },
+    "input": "a&&#&#x&#X&lt;&",
+    "output": "a&&#&#x&#X<&"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "unescape",
+                "with": "js"
+            }
+        }
+    },
+    "input": "\\43\\xA6\\xA\\xBV\\u\\uA\\ua0\\x",
+    "output": "#\u00A6\\xA\\xBV\\u\\uA\\ua0\\x"
+}]

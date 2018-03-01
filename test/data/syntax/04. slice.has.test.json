@@ -1,0 +1,55 @@
+[{
+    "expression": {
+        "root": {
+            "has": null
+        }
+    },
+    "error": "has",
+    "at": "root.has"
+}, {
+    "expression": {
+        "root": {
+            "has": false
+        }
+    },
+    "error": "has",
+    "at": "root.has"
+}, {
+    "expression": {
+        "root": {
+            "has": true
+        }
+    },
+    "error": "has",
+    "at": "root.has"
+}, {
+    "expression": {
+        "root": {
+            "has": 0
+        }
+    },
+    "error": "has",
+    "at": "root.has"
+}, {
+    "expression": {
+        "root": {
+            "has": "string"
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "has": {}
+        }
+    },
+    "error": "has",
+    "at": "root.has"
+}, {
+    "expression": {
+        "root": {
+            "has": ["array"]
+        }
+    },
+    "error": "has",
+    "at": "root.has"
+}]

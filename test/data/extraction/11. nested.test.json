@@ -1,0 +1,58 @@
+[{
+    "input": "#0|#1.X|#2",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": {
+                    "between": {
+                        "prefix": "#"
+                    }
+                }
+            }
+        }
+    },
+    "output": ["0", "1.X", "2"]
+}, {
+    "input": "#0|#1.X|#2",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": {
+                    "array": {
+                        "separator": "."
+                    }
+                }
+            }
+        }
+    },
+    "output": [
+        ["#0"],
+        ["#1", "X"],
+        ["#2"]
+    ]
+}, {
+    "input": "n:0|n:1|n:2",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": {
+                    "dictionary": {
+                        "name": {
+                            "has": "n:"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "output": [{
+        "name": "n:0"
+    }, {
+        "name": "n:1"
+    }, {
+        "name": "n:2"
+    }]
+}]

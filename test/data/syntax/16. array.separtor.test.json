@@ -1,0 +1,107 @@
+[{
+    "expression": {
+        "root": {
+            "array": {
+                "separator": null
+            }
+        }
+    },
+    "error": "separator",
+    "at": "root.array.separator"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": false
+            }
+        }
+    },
+    "error": "separator",
+    "at": "root.array.separator"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": true
+            }
+        }
+    },
+    "error": "separator",
+    "at": "root.array.separator"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": 0
+            }
+        }
+    },
+    "error": "separator",
+    "at": "root.array.separator"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "string"
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": ""
+            }
+        }
+    },
+    "error": "separator",
+    "at": "root.array.separator"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": {}
+            }
+        }
+    },
+    "error": "separator",
+    "at": "root.array.separator"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": ["array"]
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": ["array", ""]
+            }
+        }
+    },
+    "error": "separator",
+    "at": "root.array.separator"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": ["array", 0]
+            }
+        }
+    },
+    "error": "separator",
+    "at": "root.array.separator"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": []
+            }
+        }
+    },
+    "error": "separator",
+    "at": "root.array.separator"
+}]

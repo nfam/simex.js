@@ -1,0 +1,55 @@
+[{
+    "expression": {
+        "root": {
+            "slice": null
+        }
+    },
+    "error": "slice",
+    "at": "root.slice"
+}, {
+    "expression": {
+        "root": {
+            "slice": false
+        }
+    },
+    "error": "slice",
+    "at": "root.slice"
+}, {
+    "expression": {
+        "root": {
+            "slice": true
+        }
+    },
+    "error": "slice",
+    "at": "root.slice"
+}, {
+    "expression": {
+        "root": {
+            "slice": 0
+        }
+    },
+    "error": "slice",
+    "at": "root.slice"
+}, {
+    "expression": {
+        "root": {
+            "slice": "string"
+        }
+    },
+    "error": "slice",
+    "at": "root.slice"
+}, {
+    "expression": {
+        "root": {
+            "slice": {}
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "slice": ["array"]
+        }
+    },
+    "error": "slice",
+    "at": "root.slice[0]"
+}]

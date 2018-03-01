@@ -1,0 +1,98 @@
+[{
+    "expression": {
+        "root": {
+            "process": null
+        }
+    },
+    "error": "process",
+    "at": "root.process"
+}, {
+    "expression": {
+        "root": {
+            "process": false
+        }
+    },
+    "error": "process",
+    "at": "root.process"
+}, {
+    "expression": {
+        "root": {
+            "process": true
+        }
+    },
+    "error": "process",
+    "at": "root.process"
+}, {
+    "expression": {
+        "root": {
+            "process": 0
+        }
+    },
+    "error": "process",
+    "at": "root.process"
+}, {
+    "expression": {
+        "root": {
+            "process": "nofunction"
+        }
+    },
+    "error": "processUndefined",
+    "at": "root.process"
+}, {
+    "expression": {
+        "root": {
+            "process": "int"
+        }
+    },
+    "processors": ["int"]
+},  {
+    "expression": {
+        "root": {
+            "process": {}
+        }
+    },
+    "error": "byMissing",
+    "at": "root.process"
+}, {
+    "expression": {
+        "root": {
+            "process": ["int"]
+        }
+    },
+    "processors": ["int"]
+}, {
+    "expression": {
+        "root": {
+            "process": [1]
+        }
+    },
+    "error": "process",
+    "at": "root.process[0]"
+}, {
+    "expression": {
+        "root": {
+            "process": ["int", true]
+        }
+    },
+    "processors": ["int"],
+    "error": "process",
+    "at": "root.process[1]"
+}, {
+    "expression": {
+        "root": {
+            "process": "append"
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "process": "prepend"
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "process": "replace"
+        }
+    }
+}]

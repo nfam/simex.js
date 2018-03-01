@@ -1,0 +1,169 @@
+[{
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "prefix": "",
+                "trim": true
+            }
+        }
+    },
+    "output": "0 1 2 3"
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "prefix": "1"
+            }
+        }
+    },
+    "output": " 0 "
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "prefix": "1",
+                "trim": true
+            }
+        }
+    },
+    "output": "0"
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "prefix": "3",
+                "trim": true
+            }
+        }
+    },
+    "output": "0 1 2"
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "prefix": ["3", "2"],
+                "trim": true
+            }
+        }
+    },
+    "output": "0 1"
+}, {
+    "input": "0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "prefix": ["0", ""],
+                "trim": true
+            }
+        }
+    },
+    "output": ""
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "suffix": "",
+                "trim": true
+            }
+        }
+    },
+    "output": "0 1 2 3"
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "suffix": "1",
+                "trim": true
+            }
+        }
+    },
+    "output": "2 3"
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "suffix": "0",
+                "trim": true
+            }
+        }
+    },
+    "output": "1 2 3"
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "prefix": ["3", "2"],
+                "suffix": "0",
+                "trim": true
+            }
+        }
+    },
+    "output": "1"
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "prefix": "#"
+            }
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.between.prefix"
+}, {
+    "input": " 0 1 2 4 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "prefix": ["0", "#"]
+            }
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.between.prefix[1]"
+}, {
+    "input": "0 1 2 4 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "prefix": ["0", "#"]
+            }
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.between.prefix[1]"
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "suffix": "4 "
+            }
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.between.suffix"
+}]

@@ -1,0 +1,85 @@
+[{
+    "expression": {
+        "root": {
+            "process": {
+                "by": "append",
+                "with": null
+            }
+        }
+    },
+    "error": "with",
+    "at": "root.process.with"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "append",
+                "with": false
+            }
+        }
+    },
+    "error": "with",
+    "at": "root.process.with"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "append",
+                "with": true
+            }
+        }
+    },
+    "error": "with",
+    "at": "root.process.with"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "append",
+                "with": 0
+            }
+        }
+    },
+    "error": "with",
+    "at": "root.process.with"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "append",
+                "with": "string"
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "append",
+                "with": {}
+            }
+        }
+    },
+    "error": "with",
+    "at": "root.process.with"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "append",
+                "with": ["string"]
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "append",
+                "with": [0]
+            }
+        }
+    },
+    "error": "with",
+    "at": "root.process.with"
+}]

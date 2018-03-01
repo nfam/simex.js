@@ -1,0 +1,66 @@
+[{
+    "expression": {
+        "root": {
+            "value": null
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "value": true
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "value": false
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "value": 1
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "value": 2
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "value": "string"
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "value": ["array"]
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "value": ["array", null, "array"]
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "value": {
+                "name": "value"
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "value": {
+                "name": "value",
+                "null": null
+            }
+        }
+    }
+}]

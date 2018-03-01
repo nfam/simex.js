@@ -1,0 +1,64 @@
+[{
+    "input": " 0 1 2 0 1 ",
+    "expression": {
+        "root": {
+            "between": {
+                "prefix": ""
+            }
+        }
+    },
+    "output": " 0 1 2 0 1 "
+}, {
+    "input": " 0 1 2 0 1 ",
+    "expression": {
+        "root": {
+            "between": {
+                "prefix": "0"
+            }
+        }
+    },
+    "output": " 1 2 0 1 "
+}, {
+    "input": " 0 1 2 0 1 ",
+    "expression": {
+        "root": {
+            "between": {
+                "prefix": ["0", "0"]
+            }
+        }
+    },
+    "output": " 1 "
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "prefix": "#"
+            }
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.between.prefix"
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": {
+                "prefix": ["0", "#"]
+            }
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.between.prefix[1]"
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "between": [{
+                "prefix": ["0", "#"]
+            }]
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.between[0].prefix[1]"
+}]

@@ -1,0 +1,85 @@
+[{
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "omit": null
+            }
+        }
+    },
+    "error": "omit",
+    "at": "root.array.omit"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "omit": false
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "omit": true
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "omit": 0
+            }
+        }
+    },
+    "error": "omit",
+    "at": "root.array.omit"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "omit": "string"
+            }
+        }
+    },
+    "error": "omit",
+    "at": "root.array.omit"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "omit": ""
+            }
+        }
+    },
+    "error": "omit",
+    "at": "root.array.omit"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "omit": {}
+            }
+        }
+    },
+    "error": "omit",
+    "at": "root.array.omit"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "omit": ["array"]
+            }
+        }
+    },
+    "error": "omit",
+    "at": "root.array.omit"
+}]

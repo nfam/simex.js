@@ -1,0 +1,166 @@
+[{
+    "input": " 0 ",
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": {}
+            }
+        }
+    },
+    "output": {
+        "name": " 0 "
+    }
+}, {
+    "input": " 0 ",
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": {
+                    "between": {
+                        "trim": true
+                    }
+                }
+            }
+        }
+    },
+    "output": {
+        "name": "0"
+    }
+}, {
+    "input": " n0:0 n1: 1# ",
+    "expression": {
+        "root": {
+            "dictionary": {
+                "n0": {
+                    "between": {
+                        "prefix": "n0:",
+                        "suffix": " "
+                    }
+                },
+                "n1": {
+                    "between": {
+                        "prefix": "n1:",
+                        "suffix": "#",
+                        "trim": true
+                    }
+                }
+            }
+        }
+    },
+    "output": {
+        "n0": "0",
+        "n1": "1"
+    }
+}, {
+    "input": " n0:0 n1: 1# ",
+    "expression": {
+        "root": {
+            "dictionary": {
+                "n0": {
+                    "between": {
+                        "prefix": "n0:",
+                        "suffix": " "
+                    }
+                },
+                "n1": [{
+                        "between": {
+                            "prefix": "n1:",
+                            "suffix": "$"
+                        }
+                    },
+                    null
+                ]
+            }
+        }
+    },
+    "output": {
+        "n0": "0"
+    }
+}, {
+    "input": " n0:0 n1: 1# ",
+    "expression": {
+        "root": {
+            "dictionary": {
+                "n0": {
+                    "between": {
+                        "prefix": "n0:",
+                        "suffix": " "
+                    }
+                },
+                "n1": [{
+                        "between": {
+                            "prefix": "n1:",
+                            "suffix": "$"
+                        }
+                    },
+                    {
+                        "between": {
+                            "prefix": "n1:",
+                            "suffix": "#"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "output": {
+        "n0": "0",
+        "n1": " 1"
+    }
+}, {
+    "input": " n0:0 n1: 1# ",
+    "expression": {
+        "root": {
+            "dictionary": {
+                "n0": {
+                    "between": {
+                        "prefix": "n0:",
+                        "suffix": " "
+                    }
+                },
+                "n1": [{
+                        "between": {
+                            "prefix": "n1:",
+                            "suffix": "$"
+                        }
+                    },
+                    {
+                        "between": {
+                            "prefix": "n2:",
+                            "suffix": "#"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.dictionary[\"n1\"][0].between.suffix\n@ root.dictionary[\"n1\"][1].between.prefix"
+}, {
+
+    "input": " 0 ",
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": {
+                    "has": "#"
+                }
+            }
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.dictionary[\"name\"].has"
+}, {
+    "input": " 0 ",
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": {
+                    "has": "#"
+                }
+            }
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.dictionary[\"name\"].has"
+}]

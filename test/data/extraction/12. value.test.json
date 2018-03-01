@@ -1,0 +1,41 @@
+[{
+    "expression": {
+        "root": {
+            "slice": {
+                "value": {
+                    "array": [null, false, 1, 1, "string", null],
+                    "bool": true,
+                    "dictionary": {
+                        "array": [null, false, 1, 1, "string", null],
+                        "bool": true,
+                        "int": 5,
+                        "null": null,
+                        "number": 5,
+                        "string": "string"
+                    },
+                    "int": 5,
+                    "null": null,
+                    "number": 5,
+                    "string": "string"
+                }
+            }
+        }
+    },
+    "input": "ABC",
+    "output": {
+        "array": [null, false, 1, 1, "string", null],
+        "bool": true,
+        "dictionary": {
+            "array": [null, false, 1, 1, "string", null],
+            "bool": true,
+            "int": 5,
+            "null": null,
+            "number": 5,
+            "string": "string"
+        },
+        "int": 5,
+        "null": null,
+        "number": 5,
+        "string": "string"
+    }
+}]

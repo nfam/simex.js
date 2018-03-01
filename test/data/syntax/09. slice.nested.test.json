@@ -1,0 +1,91 @@
+[{
+    "expression": {
+        "root": {
+            "value": {}
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "slice": {}
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|"
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "dictionary": {}
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "value": 0,
+            "slice": 0
+        }
+    },
+    "error": "subexpressions",
+    "at": "root"
+}, {
+    "expression": {
+        "root": {
+            "value": 0,
+            "array": 0
+        }
+    },
+    "error": "subexpressions",
+    "at": "root"
+}, {
+    "expression": {
+        "root": {
+            "value": 0,
+            "dictionary": 0
+        }
+    },
+    "error": "subexpressions",
+    "at": "root"
+}, {
+    "expression": {
+        "root": {
+            "slice": 0,
+            "array": 0
+        }
+    },
+    "error": "subexpressions",
+    "at": "root"
+}, {
+    "expression": {
+        "root": {
+            "slice": 0,
+            "dictionary": 0
+        }
+    },
+    "error": "subexpressions",
+    "at": "root"
+}, {
+    "expression": {
+        "root": {
+            "slice": 0,
+            "array": 0,
+            "dictionary": 0
+        }
+    },
+    "error": "subexpressions",
+    "at": "root"
+}, {
+    "expression": {
+        "root": {
+            "array": 0,
+            "dictionary": 0
+        }
+    },
+    "error": "subexpressions",
+    "at": "root"
+}]

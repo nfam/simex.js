@@ -1,0 +1,136 @@
+[{
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": null
+            }
+        }
+    },
+    "error": "item",
+    "at": "root.array.item"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": false
+            }
+        }
+    },
+    "error": "item",
+    "at": "root.array.item"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": true
+            }
+        }
+    },
+    "error": "item",
+    "at": "root.array.item"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": 0
+            }
+        }
+    },
+    "error": "item",
+    "at": "root.array.item"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": "string"
+            }
+        }
+    },
+    "error": "item",
+    "at": "root.array.item"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": "empty"
+            }
+        }
+    },
+    "error": "item",
+    "at": "root.array.item"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": "invalid"
+            }
+        }
+    },
+    "error": "item",
+    "at": "root.array.item"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": {}
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": []
+            }
+        }
+    },
+    "error": "item",
+    "at": "root.array.item"
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": [null]
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": [{},{}]
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": [{}, null]
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": [{}, "array"]
+            }
+        }
+    },
+    "error": "item",
+    "at": "root.array.item[1]"
+}]

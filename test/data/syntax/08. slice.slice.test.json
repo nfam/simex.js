@@ -1,0 +1,37 @@
+[{
+    "expression": {
+        "root": {
+            "slice": {}
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "slice": []
+        }
+    },
+    "error": "slice",
+    "at": "root.slice"
+},{
+    "expression": {
+        "root": {
+            "slice": [{}]
+        }
+    }
+},{
+    "expression": {
+        "root": {
+            "slice": [{}, null]
+        }
+    },
+    "error": "slice",
+    "at": "root.slice[1]"
+},{
+    "expression": {
+        "root": {
+            "slice": [{}, 0]
+        }
+    },
+    "error": "slice",
+    "at": "root.slice[1]"
+}]

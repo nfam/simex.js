@@ -1,0 +1,11 @@
+[{
+    "input": " 0 1 2 0 1 ",
+    "expression": {
+        "root": {
+            "between": {
+                "trim": true
+            }
+        }
+    },
+    "output": "0 1 2 0 1"
+}]

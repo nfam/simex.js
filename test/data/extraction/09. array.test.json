@@ -1,0 +1,138 @@
+[{
+    "input": " 0 ",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": " "
+            }
+        }
+    },
+    "output": ["", "0", ""]
+}, {
+    "input": " 0 ",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": " ",
+                "omit": true
+            }
+        }
+    },
+    "output": ["0"]
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": " "
+            }
+        }
+    },
+    "output": ["", "0", "1", "2", "3", ""]
+}, {
+    "input": " 0 1 2 3 ",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": " ",
+                "omit": true
+            }
+        }
+    },
+    "output": ["0", "1", "2", "3"]
+}, {
+    "input": " 0  1  2  3 ",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": " "
+            }
+        }
+    },
+    "output": ["", "0", "", "1", "", "2", "", "3", ""]
+}, {
+    "input": " 0  1  2  3 ",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": " ",
+                "omit": true
+            }
+        }
+    },
+    "output": ["0", "1", "2", "3"]
+}, {
+    "input": " 0|1|2|3 ",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": [" ", "|"]
+            }
+        }
+    },
+    "output": ["", "0", "1", "2", "3", ""]
+}, {
+    "input": "#0|#1|#2|3",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": {
+                    "has": "#"
+                }
+            }
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.array.item.has"
+}, {
+
+    "input": "#0|#1|#2|3",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "item": [{
+                    "has": "."
+                }, {
+                    "has": "#"
+                }]
+            }
+        }
+    },
+    "error": "inputUnmatched",
+    "at": "root.array.item[0].has\n@ root.array.item[1].has"
+}, {
+    "input": " #0|#1|#2|3 ",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": [" ", "|"],
+                "item": [{
+                        "has": "#"
+                    },
+                    null
+                ]
+            }
+        }
+    },
+    "output": ["#0", "#1", "#2"]
+}, {
+    "input": " #0|$|#|#2",
+    "expression": {
+        "root": {
+            "array": {
+                "separator": "|",
+                "omit": true,
+                "item": [{
+                        "between": {
+                            "prefix": "#"
+                        }
+                    },
+                    null
+                ]
+            }
+        }
+    },
+    "output": ["0", "", "2"]
+}]

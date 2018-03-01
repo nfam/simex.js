@@ -1,0 +1,67 @@
+[{
+    "expression": {
+        "root": {
+            "between": {
+                "trim": null
+            }
+        }
+    },
+    "error": "trim",
+    "at": "root.between.trim"
+}, {
+    "expression": {
+        "root": {
+            "between": {
+                "trim": false
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "between": {
+                "trim": true
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "between": {
+                "trim": 0
+            }
+        }
+    },
+    "error": "trim",
+    "at": "root.between.trim"
+}, {
+    "expression": {
+        "root": {
+            "between": {
+                "trim": "string"
+            }
+        }
+    },
+    "error": "trim",
+    "at": "root.between.trim"
+}, {
+    "expression": {
+        "root": {
+            "between": {
+                "trim": {}
+            }
+        }
+    },
+    "error": "trim",
+    "at": "root.between.trim"
+}, {
+    "expression": {
+        "root": {
+            "between": {
+                "trim": ["array"]
+            }
+        }
+    },
+    "error": "trim",
+    "at": "root.between.trim"
+}]

@@ -1,0 +1,28 @@
+[{
+    "input": " 0 X 2 0 1 ",
+    "expression": {
+        "root": {
+            "between": {
+                "backward": true,
+                "prefix": ["0", "2"],
+                "suffix": "0",
+                "trim": true
+            }
+        }
+    },
+    "output": "X"
+}, {
+    "input": " 0 X 2 0 1 Y ",
+    "expression": {
+        "root": {
+            "between": [{
+                "prefix": ["0"],
+                "suffix": "0",
+                "trim": true
+            }, {
+                "prefix": ["X"]
+            }]
+        }
+    },
+    "output": " 2"
+}]

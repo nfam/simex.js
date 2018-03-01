@@ -1,0 +1,96 @@
+[{
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": null
+            }
+        }
+    },
+    "error": "member",
+    "at": "root.dictionary[\"name\"]"
+
+}, {
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": false
+            }
+        }
+    },
+    "error": "member",
+    "at": "root.dictionary[\"name\"]"
+}, {
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": true
+            }
+        }
+    },
+    "error": "member",
+    "at": "root.dictionary[\"name\"]"
+}, {
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": 0
+            }
+        }
+    },
+    "error": "member",
+    "at": "root.dictionary[\"name\"]"
+}, {
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": "string"
+            }
+        }
+    },
+    "error": "member",
+    "at": "root.dictionary[\"name\"]"
+}, {
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": {}
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": []
+            }
+        }
+    },
+    "error": "member",
+    "at": "root.dictionary[\"name\"]"
+}, {
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": [{}]
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": [{}, null]
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "dictionary": {
+                "name": [{}, null, "array"]
+            }
+        }
+    },
+    "error": "member",
+    "at": "root.dictionary[\"name\"][2]"
+}]

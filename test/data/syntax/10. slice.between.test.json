@@ -1,0 +1,80 @@
+[{
+    "expression": {
+        "root": {
+            "between": null
+        }
+    },
+    "error": "between",
+    "at": "root.between"
+}, {
+    "expression": {
+        "root": {
+            "between": false
+        }
+    },
+    "error": "between",
+    "at": "root.between"
+}, {
+    "expression": {
+        "root": {
+            "between": true
+        }
+    },
+    "error": "between",
+    "at": "root.between"
+}, {
+    "expression": {
+        "root": {
+            "between": 0
+        }
+    },
+    "error": "between",
+    "at": "root.between"
+}, {
+    "expression": {
+        "root": {
+            "between": "string"
+        }
+    },
+    "error": "between",
+    "at": "root.between"
+}, {
+    "expression": {
+        "root": {
+            "between": {}
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "between": ["array"]
+        }
+    },
+    "error": "between",
+    "at": "root.between[0]"
+}, {
+    "expression": {
+        "root": {
+            "between": [{
+            }]
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "between": [{
+            }, null]
+        }
+    },
+    "error": "between",
+    "at": "root.between[1]"
+}, {
+    "expression": {
+        "root": {
+            "between": [{
+            }, "array"]
+        }
+    },
+    "error": "between",
+    "at": "root.between[1]"
+}]

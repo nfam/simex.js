@@ -1,0 +1,97 @@
+[{
+    "expression": {
+        "root": {
+            "process": {
+            }
+        }
+    },
+    "error": "byMissing",
+    "at": "root.process"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": null
+            }
+        }
+    },
+    "error": "by",
+    "at": "root.process.by"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": false
+            }
+        }
+    },
+    "error": "by",
+    "at": "root.process.by"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": true
+            }
+        }
+    },
+    "error": "by",
+    "at": "root.process.by"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": 0
+            }
+        }
+    },
+    "error": "by",
+    "at": "root.process.by"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "int"
+            }
+        }
+    },
+    "processors": ["int"]
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "append"
+            }
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": "nofunction"
+            }
+        }
+    },
+    "error": "processUndefined",
+    "at": "root.process.by"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": {}
+            }
+        }
+    },
+    "error": "by",
+    "at": "root.process.by"
+}, {
+    "expression": {
+        "root": {
+            "process": {
+                "by": ["array"]
+            }
+        }
+    },
+    "error": "by",
+    "at": "root.process.by"
+}]

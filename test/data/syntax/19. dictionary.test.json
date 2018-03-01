@@ -1,0 +1,55 @@
+[{
+    "expression": {
+        "root": {
+            "dictionary": null
+        }
+    },
+    "error": "dictionary",
+    "at": "root.dictionary"
+}, {
+    "expression": {
+        "root": {
+            "dictionary": false
+        }
+    },
+    "error": "dictionary",
+    "at": "root.dictionary"
+}, {
+    "expression": {
+        "root": {
+            "dictionary": true
+        }
+    },
+    "error": "dictionary",
+    "at": "root.dictionary"
+}, {
+    "expression": {
+        "root": {
+            "dictionary": 0
+        }
+    },
+    "error": "dictionary",
+    "at": "root.dictionary"
+}, {
+    "expression": {
+        "root": {
+            "dictionary": "string"
+        }
+    },
+    "error": "dictionary",
+    "at": "root.dictionary"
+}, {
+    "expression": {
+        "root": {
+            "dictionary": {}
+        }
+    }
+}, {
+    "expression": {
+        "root": {
+            "dictionary": ["array"]
+        }
+    },
+    "error": "dictionary",
+    "at": "root.dictionary"
+}]

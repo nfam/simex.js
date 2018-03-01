@@ -1,0 +1,52 @@
+[{
+    "expression": {
+        "root": {
+            "slice": {
+                "has": "#",
+                "value": "X"
+            }
+        }
+    },
+    "input": "#0",
+    "output": "X"
+}, {
+    "expression": {
+        "root": {
+            "slice": [{
+                "has": "#",
+                "value": "X"
+            },{
+                "has": "$",
+                "value": "M"
+            }]
+        }
+    },
+    "input": "$X",
+    "output": "M"
+}, {
+    "expression": {
+        "root": {
+            "slice": {
+                "has": "#"
+            }
+        }
+    },
+    "input": "0",
+    "error": "inputUnmatched",
+    "at": "root.slice.has"
+}, {
+    "expression": {
+        "root": {
+            "slice": [{
+                "has": "#",
+                "value": "X"
+            },{
+                "has": "$",
+                "value": "M"
+            }]
+        }
+    },
+    "input": "KX",
+    "error": "inputUnmatched",
+    "at": "root.slice[0].has\n@ root.slice[1].has"
+}]
